@@ -20,13 +20,35 @@
                                 <span class="hide-menu">Profile</span>
                             </a>
                         </li>
+                        
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.php"
-                                aria-expanded="false">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark active" href="javascript:void(0)" 
+                            aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">Basic Table</span>
+                                <span class="hide-menu">Cadastros</span>
                             </a>
+                            <ul aria-expanded="false" class="collapse first-level in">
+                                <li class="sidebar-item">
+                                    <a href="header.php" class="sidebar-link">
+                                        <i class="fas fa-caret-right" aria-hidden="true"></i>
+                                        <span class="hide-menu">Cabeçalho</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="eco-products-cart.html" class="sidebar-link">
+                                        <i class="mdi mdi-cart"></i>
+                                        <span class="hide-menu">Products Cart</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="eco-products-edit.html" class="sidebar-link">
+                                        <i class="mdi mdi-cart-plus"></i>
+                                        <span class="hide-menu">Products Edit</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+                       
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="fontawesome.php"
                                 aria-expanded="false">
@@ -58,7 +80,7 @@
                         <li class="text-center p-20 upgrade-btn">
                             <a href="https://jhonathanribeiro.netlify.app/"
                                 class="btn d-grid btn-danger text-white" target="_blank">
-                                Upgrade to Pro</a>
+                                Suporte</a>
                         </li>
                     </ul>
 

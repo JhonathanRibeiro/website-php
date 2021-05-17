@@ -1,10 +1,9 @@
 /*
-Template Name: Admin Pro Admin
-Author: Wrappixel
-Email: niravjoshi87@gmail.com
-File: js
+Project Name: Admin template
+Author: Jhonathan Ribeiro
+Site: https://jhonathanribeiro.netlify.app
 */
-$(function () {
+$(function() {
     "use strict";
     // ============================================================== 
     // Newsletter
@@ -12,10 +11,10 @@ $(function () {
 
     //ct-visits
     new Chartist.Line('#ct-visits', {
-        labels: ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015'],
+        labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
         series: [
-            [5, 2, 7, 4, 5, 3, 5, 4]
-            , [2, 5, 2, 6, 2, 5, 2, 4]
+            [5, 2, 7, 4, 5, 3, 5, 4],
+            [2, 5, 2, 6, 2, 5, 2, 4]
         ]
     }, {
         top: 0,
@@ -26,7 +25,7 @@ $(function () {
             Chartist.plugins.tooltip()
         ],
         axisY: {
-            labelInterpolationFnc: function (value) {
+            labelInterpolationFnc: function(value) {
                 return (value / 1) + 'k';
             }
         },
@@ -36,7 +35,7 @@ $(function () {
 
     var chart = [chart];
 
-    var sparklineLogin = function () {
+    var sparklineLogin = function() {
         $('#sparklinedash').sparkline([0, 5, 6, 10, 9, 12, 4, 9], {
             type: 'bar',
             height: '30',
@@ -71,11 +70,9 @@ $(function () {
         });
     }
     var sparkResize;
-    $(window).on("resize", function (e) {
+    $(window).on("resize", function(e) {
         clearTimeout(sparkResize);
         sparkResize = setTimeout(sparklineLogin, 500);
     });
     sparklineLogin();
 });
-
-

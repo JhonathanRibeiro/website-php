@@ -10,8 +10,7 @@
                     <li><a href="#" class="fw-normal">Dashboard</a></li>
                 </ol>
                 <a href="https://jhonathanribeiro.netlify.app/" target="_blank"
-                    class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Upgrade
-                    to Pro</a>
+                    class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Suporte</a>
             </div>
         </div>
     </div>

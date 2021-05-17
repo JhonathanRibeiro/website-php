@@ -24,7 +24,7 @@
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.php"
                         aria-expanded="false">
                         <i class="fa fa-table" aria-hidden="true"></i>
-                        <span class="hide-menu">Basic Table</span>
+                        <span class="hide-menu">Cadastros</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
@@ -58,7 +58,7 @@
                 <li class="text-center p-20 upgrade-btn">
                     <a href="https://jhonathanribeiro.netlify.app/"
                         class="btn d-grid btn-danger text-white" target="_blank">
-                        Upgrade to Pro</a>
+                        Suporte</a>
                 </li>
             </ul>
 

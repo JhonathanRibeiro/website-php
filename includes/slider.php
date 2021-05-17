@@ -1,40 +1,30 @@
-
+<?php
+require 'db/connect.php';
+    $query = $conn->query("SELECT * FROM clientes");
+    $query->rowCount() > 0 ? $dados = $query->fetchAll(PDO::FETCH_ASSOC): "";
+?>
     <!-- Customers -->
     <div class="slider-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h5>Trusted By</h5>
-                    
-                    <!-- Image Slider -->
+                    <h5>Clientes</h5>
                     <div class="slider-container">
                         <div class="swiper-container image-slider">
                             <div class="swiper-wrapper">
+                                
+                            <?php foreach($dados as $data){ ?>
                                 <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-1.png" alt="alternative">
+                                    <img class="img-fluid" src="images/<?=$data['cliente_logo']?>" alt="alternative">
                                 </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-2.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-3.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-4.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-5.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-6.png" alt="alternative">
-                                </div>
+                            <?php } ?>
+
                             </div> <!-- end of swiper-wrapper -->
                         </div> <!-- end of swiper container -->
                     </div> <!-- end of slider-container -->
                     <!-- end of image slider -->
-
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of slider-1 -->
-    <!-- end of customers -->
+    <!-- end of data
